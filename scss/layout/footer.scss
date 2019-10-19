@@ -1,0 +1,12 @@
+@import'../fundation/variable.scss';
+footer{
+    background-color: $main_color;
+    height: 2rem;
+
+    .footer_text{
+        width:7rem;
+        font-size:1.2rem;
+        margin-left:auto;
+        margin-right:auto;
+    }
+}

@@ -6,27 +6,30 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>FLOWERS</title>
     <link rel="shortcut icon" href="img/logo.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <img src="img/logo.png" alt="FLOWERS-LOGO">
-        <img src="img/top1s@2x.png" alt="FLOWERS-TOP">
+        <img src="img/logo.png" alt="FLOWERS-LOGO" class="top-logo">
+        <img src="img/top1s@2x.png" alt="FLOWERS-TOP" class="top-img">
     </header>
-    <div id="menu">
+    <div id="menu" class="menu">
         <ul>
-            <li>Comsept</li>
-            <li>Shop一覧</li>
-            <li>配送・配達</li>
-            <li>お問い合わせ</li>
+            <li><a href="#consept">Comsept</a></li>
+            <li class="line"><a href="#shop">Shop一覧</a></li>                <li class="line"><a href="#deliverly">配送・配達</a></li>
+            <li class="line"><a href="#contact">お問い合わせ</a></li>
         </ul>
     </div>
-    <main>
-        <div id="comsept">
+
+    <main class="main">
+
+        <div id="comsept" class="comsept">
             <h2>Comsept</h2>
             <h3>身近な生活にお花を。</h3>
             <p class="dis">
-                「身近な生活にお花を。」をコンセプトにお花の販売をしています。
-                季節のお花を始め、結婚式や入学式などイベントごとのお花も用意いたします。
+                「身近な生活にお花を。」をコンセプトにお花の販売をしています。<br>
+                季節のお花を始め、結婚式や入学式などイベントごとのお花も用意いたします。<br>
                 お花の配送も行なっております。
             </p>
             <div class="comsept-ph">
@@ -36,18 +39,18 @@
             </div>
         </div>
 
-        <div id="shop">
+        <div id="shop" class="shop">
             <h2>Shop一覧</h2>
             <ul>
-                <li>
+                <li class="shop-list">
                     <img src="img/shop1s@2x.png" alt="東京１号店">
                     <p class="shop-name">
                         東京1号店
                     </p>
-                    <p class="dis">
-                        〒000-0000
+                    <p class="shop-dis">
+                        〒000-0000<br>
                         東京都千代田区○丁目<br>
-                        000-0000-0000
+                        tel:000-0000-0000
                     </p>
                 </li>
                 <li>
@@ -55,9 +58,10 @@
                     <p class="shop-name">
                         東京2号店
                     </p>
-                    <p class="dis">                            〒000-0000
-                        東京都目黒区○丁目<br>
-                        000-0000-0000
+                    <p class="shop-dis">                            
+                        〒000-0000<br>
+                        東京都目黒区○丁目<br>                           
+                        tel:000-0000-0000
                     </p>
                 </li>
                 <li>
@@ -65,15 +69,16 @@
                     <p class="shop-name">
                         東京3号店
                     </p>
-                    <p class="dis">
-                        〒000-0000
+                    <p class="shop-dis">
+                        〒000-0000<br>
                         東京都世田谷区○丁目<br>
-                        000-0000-0000
+                        tel:000-0000-0000
                     </p>
                 </li>
             </ul>
-        </div>
-        <div class="deliverly">
+        </div>    
+        
+        <div id="deliverly" class="deliverly">
             <h2>配送・配達</h2>
             <img src="img/discover@2x.png" alt="配送">
             <table>
@@ -83,50 +88,51 @@
                     <td class="money">500円</td>
                 </tr>
                 <tr>
-                    <td class="place">首都圏外</td>
-                    <td class="money">600円〜</td>
+                    <td class="place">首都圏外</td>                        <td class="money">600円〜</td>
                 </tr>
             </table>
             <p class="dis">
                 ※ご注文はお届けの3日前までにお願いいたします。
             </p>
         </div>
-        <div id="contact">
-            <h2>お問い合わせ</h2>
-            <form action="contact.html" method="POST">
 
+        <div id="contact" class="contact">
+            <h2>お問い合わせ</h2>
+            <form action="contact.html" method="POST" class="form">
                 <div class="item">
-                    <label class="label" for="name">名前</label> 
+                    <label class="label" for="name">お名前</label> 
                     <input class="inputs" id="name" type="text" name="yourname">
                 </div>
                 <div class="item">
-                    <label for="num">電話番号</label>
-                    <input type="number" name="tel" id="num">
+                    <label class="label" for="num">電話番号</label>
+                    <span>※半角　ハイフンなし</span>
+                    <input class="inputs" type="number" name="tel" id="num">
                 </div>
                 <div class="item">
-                    <label for="mail">メール</label>
-                    <input id="mail" type="email" name="mail">
+                    <label class="label" for="mail">メールアドレス</label>
+                    <span>※半角</span>
+                    <input class="inputs" id="mail" type="email" name="mail">
                 </div>
                 <div class="item">
                     <label class="label">メッセージ</label>
-                    <textarea class="inputs"></textarea>
+                    <textarea class="inputs massage"></textarea>
                 </div>
-
                 <p class="dis">※ご注文の際はメッセージ欄に詳細をご記入ください。</p>
                 <p class="dis">※店舗より直接お客様へご連絡することがございます。</p>
 
-                <div class="btn-area">
-                    <input type="submit" value="送信する">
-                </div>
+                
+                <input class="btn-area" type="submit" value="送信する">
+                
 
             </form>
 
-            <p class="dis2">△TOPに戻る</p>
-
+            <a href="#" class="return_top">△TOPに戻る</a>
         </div>
+
     </main>
+
     <footer>
-        <p class="dis2">(C)FLOWERS</p>
+        <p class="footer_text">(C)FLOWERS</p>
     </footer>
 </body>
 </html>

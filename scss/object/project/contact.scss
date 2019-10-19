@@ -1,0 +1,45 @@
+@import'../../fundation/variable.scss';
+
+.contact{
+    background-color: $contact_color;
+    height: 1000px;
+
+    .form{
+        background-color: $main_color;
+        width:900px;
+        height:700px;
+        margin:0 auto;
+        padding:40px 0 0 0;
+        
+
+        .item{
+            font-size:20px;
+
+            .label{
+                margin:20px 0 0 125px;
+                width:150px;
+                margin-right: 0px;
+            }
+
+            .inputs{
+                margin:15px 0 10px 155px;
+                height:30px;
+                width:600px;
+                background-color: $contact_text_color;
+                font-size:20px;
+            }
+
+            span{
+                font-size:8px;
+            }
+
+            .massage{
+                height:200px;
+            }
+
+            .dis{
+                font-size:8px;
+            }
+        }
+    }
+}

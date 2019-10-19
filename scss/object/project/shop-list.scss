@@ -1,0 +1,26 @@
+@import'../../fundation/variable.scss';
+.shop{
+
+    ul{
+        display: flex;
+        justify-content: center;
+
+        li{
+            text-align: center;
+            background-color:$shop-list_color;
+            height: 350px;
+            width:280px;
+            margin:20px;
+
+            img{
+                margin:20px 10px;;
+            }
+
+            .shop-name{
+                margin:0.7rem 0;
+            }
+        }
+    }
+
+
+}

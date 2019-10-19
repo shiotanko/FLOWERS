@@ -1,0 +1,251 @@
+/*! reset.scss Copyright 2014@Tomohiro IKEDA */
+@import url("https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c&display=swap");
+html, body, div,
+h1, h2, h3, h4, h5, h6,
+p, ul, ol, dl, dt, dd,
+table, th, td,
+form, fieldset,
+header, section, article, aside, footer, figure,
+figcaption, nav {
+  margin: 0px;
+  padding: 0px; }
+
+article, aside, canvas, details, figcaption, figure,
+footer, header, menu, nav, section, summary {
+  display: block; }
+
+@viewport {
+  width: extend-to-zoom 100%;
+  zoom: 1;
+  user-zoom: zoom; }
+
+img {
+  max-width: 100%; }
+
+input, textarea, select, button {
+  outline: none; }
+
+label,
+select,
+[type="button"],
+[type="checkbox"],
+[type="radio"],
+[type="submit"],
+[type="reset"],
+[type="file"],
+[type="number"] {
+  cursor: pointer; }
+
+html {
+  overflow: scroll;
+  overflow: -moz-scrollbars-vertical;
+  overflow-x: scroll; }
+
+ul, ol {
+  list-style: none; }
+
+p, li, dt, dd, th, td, pre {
+  -ms-line-break: strict;
+  line-break: strict;
+  -ms-word-break: break-strict;
+  word-break: break-strict; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0px; }
+
+img {
+  border: none;
+  vertical-align: middle; }
+
+body {
+  font-family: 'M PLUS Rounded 1c';
+  background-color: #F4F2DB;
+  color: #506D80;
+  width: 100%; }
+
+.top-logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+.top-img {
+  width: 98%;
+  display: block;
+  margin-right: auto;
+  margin-left: auto; }
+
+footer {
+  background-color: #F4F2DB;
+  height: 2rem; }
+  footer .footer_text {
+    width: 7rem;
+    font-size: 1.2rem;
+    margin-left: auto;
+    margin-right: auto; }
+
+.menu {
+  margin-top: 1rem; }
+  .menu ul {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-around;
+    justify-content: space-around; }
+  .menu li {
+    display: block;
+    width: 20rem;
+    height: 3rem;
+    margin: 0.5rem 0 0 0;
+    text-align: center;
+    font-size: 1.2rem;
+    text-decoration-line: none; }
+    .menu li a {
+      text-decoration: none;
+      color: #506D80; }
+    .menu li a:after {
+      content: "";
+      display: block;
+      margin: 0 auto;
+      width: 7px;
+      height: 7px;
+      top: 120%;
+      left: 0;
+      right: 0;
+      bottom: 20px;
+      border-right: 1px solid #506D80;
+      border-bottom: 1px solid #506D80;
+      transform: rotate(45deg); }
+  .menu .line {
+    border-left: 1px solid #506D80; }
+
+h2 {
+  display: block;
+  text-align: center;
+  font-size: 1.8rem;
+  width: 11rem;
+  border-bottom: 1px solid #506D80;
+  margin: 0 auto 3rem;
+  padding-top: 5rem; }
+
+h3 {
+  font-size: 1.3rem;
+  text-align: center;
+  margin-bottom: 1rem; }
+
+.dis {
+  font-size: 1rem;
+  text-align: center; }
+
+.shop-name {
+  font-size: 1.1rem; }
+
+.comsept-ph {
+  display: block;
+  width: 80%;
+  text-align: center;
+  margin: 1rem auto; }
+  .comsept-ph img {
+    margin: 3rem 1rem; }
+
+.shop {
+  background-color: #BBDBD4;
+  height: 680px; }
+
+.comsept {
+  height: 650px; }
+
+.shop ul {
+  display: flex;
+  justify-content: center; }
+  .shop ul li {
+    text-align: center;
+    background-color: #EFF7F1;
+    height: 350px;
+    width: 280px;
+    margin: 20px; }
+    .shop ul li img {
+      margin: 20px 10px; }
+    .shop ul li .shop-name {
+      margin: 0.7rem 0; }
+
+.deliverly {
+  background-color: #E9EFEF;
+  height: 700px; }
+  .deliverly img {
+    display: block;
+    margin: 3rem auto 3rem;
+    width: 900px; }
+  .deliverly table {
+    display: block;
+    width: 650px;
+    margin: 20px auto;
+    text-align: center;
+    border-collapse: collapse; }
+    .deliverly table tr {
+      height: 60px;
+      border: solid 1px #707070;
+      font-size: 15px; }
+    .deliverly table td {
+      width: 250px;
+      padding: 10px 60px;
+      font-size: 16px;
+      border: solid 1px #707070; }
+    .deliverly table .money {
+      text-align: center; }
+    .deliverly table .tit {
+      background-color: #CFD3D2;
+      width: 200px;
+      height: 120px;
+      padding: 15px 15px 10px 15px;
+      font-size: 20px; }
+
+.contact {
+  background-color: #DBE5C0;
+  height: 1000px; }
+  .contact .form {
+    background-color: #F4F2DB;
+    width: 900px;
+    height: 700px;
+    margin: 0 auto;
+    padding: 40px 0 0 0; }
+    .contact .form .item {
+      font-size: 20px; }
+      .contact .form .item .label {
+        margin: 20px 0 0 125px;
+        width: 150px;
+        margin-right: 0px; }
+      .contact .form .item .inputs {
+        margin: 15px 0 10px 155px;
+        height: 30px;
+        width: 600px;
+        background-color: #F9F9DD;
+        font-size: 20px; }
+      .contact .form .item span {
+        font-size: 8px; }
+      .contact .form .item .massage {
+        height: 200px; }
+      .contact .form .item .dis {
+        font-size: 8px; }
+
+.btn-area {
+  display: block;
+  height: 50px;
+  width: 600px;
+  margin: 20px auto;
+  background-color: #AFAFAC;
+  font-size: 18px;
+  color: #F4F2DB;
+  border-radius: 10px; }
+
+.btn-area:hover {
+  background-color: #506D80; }
+
+.return_top {
+  display: block;
+  text-decoration: none;
+  color: #506D80;
+  width: 100px;
+  margin: 20px 0px 20px 1100px; }
+
+.return_top:hover {
+  text-decoration: underline; }

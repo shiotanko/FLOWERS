@@ -1,0 +1,58 @@
+@import'../../fundation/variable.scss';
+
+.deliverly{
+    background-color: $deliverly_color;
+    height:700px;
+
+    img{
+        display: block;
+        margin:3rem auto 3rem;
+        width:900px;
+    }
+
+    table{
+        display: block;
+        width:650px;
+        margin:20px auto;   
+        text-align: center;
+        border-collapse:collapse;
+           
+
+        tr{
+            height: 60px;
+            border:solid 1px $border_color;
+            font-size:15px;
+
+        
+        }
+
+        td{
+            width:250px;
+            padding:10px 60px ;
+            font-size:16px;
+            border:solid 1px $border_color;
+        }
+
+        .money{
+            text-align: center;
+        }
+
+        .tit{
+            background-color: #CFD3D2;
+            width:200px;
+            height:120px;
+            padding:15px 15px 10px 15px;
+            font-size:20px;
+            
+        } 
+    }
+
+   
+
+
+
+}
+
+
+
+

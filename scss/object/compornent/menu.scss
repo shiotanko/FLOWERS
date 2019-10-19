@@ -1,0 +1,50 @@
+@import'../../fundation/variable.scss';
+.menu{
+    margin-top:1rem;
+    ul{
+        display: -webkit-flex;
+        display: flex;
+        -webkit-justify-content: space-around;
+        justify-content: space-around;
+   }
+   li{
+       display: block;
+       width:20rem;
+       height:3rem;
+       margin:0.5rem 0 0 0;
+       text-align:center;
+       font-size: 1.2rem;    
+       text-decoration-line:none;
+
+       a{
+           text-decoration: none;
+           color:$font_color;
+       }
+
+       a:after{
+        content:"";
+        display: block;
+        margin: 0 auto;
+        width: 7px;
+        height: 7px;
+        top:120%;
+        left: 0;
+        right: 0;
+        bottom: 20px;
+        border-right: 1px solid $font_color;
+        border-bottom: 1px solid $font_color;
+        transform: rotate(45deg);
+        
+    
+       }
+   }
+
+   .line{
+        border-left: 1px solid $font_color;
+   }
+
+   
+
+  
+    
+}

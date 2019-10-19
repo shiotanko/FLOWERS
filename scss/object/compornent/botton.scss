@@ -1,0 +1,16 @@
+@import'../../fundation/variable.scss';
+
+.btn-area{
+    display: block;
+    height:50px;
+    width:600px;
+    margin:20px auto;
+    background-color:$contact_btn_color;
+    font-size:18px;
+    color:$main_color;
+    border-radius: 10px;
+}
+
+.btn-area:hover{
+    background-color: $font_color;
+}
