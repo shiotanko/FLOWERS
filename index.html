@@ -10,18 +10,36 @@
     <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <img src="img/logo.png" alt="FLOWERS-LOGO" class="top-logo">
-        <img src="img/top1s@2x.png" alt="FLOWERS-TOP" class="top-img">
-    </header>
-    <div id="menu" class="menu">
-        <ul>
-            <li><a href="#consept">Comsept</a></li>
-            <li class="line"><a href="#shop">Shop一覧</a></li>                <li class="line"><a href="#deliverly">配送・配達</a></li>
-            <li class="line"><a href="#contact">お問い合わせ</a></li>
-        </ul>
-    </div>
 
+    <header>
+
+        <img src="img/logo.png" alt="FLOWERS-LOGO" class="top-logo">
+
+        <div class="wrapper-slide">
+            <div class="slide">
+                <ul class="container">
+                    <li class="current"><img src="img/top1s@2x.png" alt="FLOWERS-TOP1" ></li>
+                    <li><img src="img/top2s@2x.png" alt="FLOWERS-TOP2"></li>
+                    <li><img src="img/top3s@2x.png" alt="FLOWERS-TOP3"></li>
+                </ul>
+
+                <a href="#" class="prev"><img src="img/arrow-left1.png" alt="prew1"></a>
+                <a href="#" class="next"><img src="img/arrow-right1.png" alt="next1"></a>
+            </div>
+        </div>
+
+    </header>
+
+    <div class="menu-wrap">
+        <div id="menu" class="menu">
+            <ul>
+                <li><a href="#consept">Comsept</a></li>
+                <li class="line"><a href="#shop">Shop一覧</a></li>                <li class="line"><a href="#deliverly">配送・配達</a></li>
+                <li class="line"><a href="#contact">お問い合わせ</a></li>
+            </ul>
+        </div>
+    </div>
+    
     <main class="main">
 
         <div id="comsept" class="comsept">
@@ -134,5 +152,7 @@
     <footer>
         <p class="footer_text">(C)FLOWERS</p>
     </footer>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
 </body>
 </html>

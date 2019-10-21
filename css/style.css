@@ -66,14 +66,7 @@ body {
 
 .top-logo {
   display: block;
-  margin-left: auto;
-  margin-right: auto; }
-
-.top-img {
-  width: 98%;
-  display: block;
-  margin-right: auto;
-  margin-left: auto; }
+  margin: 1% auto; }
 
 footer {
   background-color: #F4F2DB;
@@ -84,8 +77,14 @@ footer {
     margin-left: auto;
     margin-right: auto; }
 
+.menu-wrap {
+  position: relative; }
+
 .menu {
-  margin-top: 1rem; }
+  display: block; }
+  .menu .fixed {
+    position: fixed;
+    top: 0; }
   .menu ul {
     display: -webkit-flex;
     display: flex;
@@ -127,6 +126,9 @@ h2 {
   margin: 0 auto 3rem;
   padding-top: 5rem; }
 
+.comsept h2 {
+  padding-top: 10rem; }
+
 h3 {
   font-size: 1.3rem;
   text-align: center;
@@ -143,13 +145,13 @@ h3 {
   display: block;
   width: 80%;
   text-align: center;
-  margin: 1rem auto; }
+  margin: 0.2rem auto; }
   .comsept-ph img {
     margin: 3rem 1rem; }
 
 .shop {
   background-color: #BBDBD4;
-  height: 680px; }
+  height: 700px; }
 
 .comsept {
   height: 650px; }
@@ -249,3 +251,42 @@ h3 {
 
 .return_top:hover {
   text-decoration: underline; }
+
+.slide {
+  position: relative;
+  margin: 0 auto;
+  max-width: 98%;
+  font-size: 0; }
+  .slide img {
+    max-width: 100%; }
+  .slide .prev, .slide .next {
+    position: absolute;
+    display: block;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    z-index: 100;
+    text-align: center; }
+  .slide .prev {
+    background: 50% 50% no-repeat;
+    left: 0; }
+  .slide .next {
+    background: 50% 50% no-repeat;
+    right: 0; }
+  .slide .container {
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+    .slide .container li {
+      position: absolute;
+      z-index: 0;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      transition: opacity 1s linear; }
+    .slide .container .current {
+      position: relative;
+      z-index: 1;
+      opacity: 1; }

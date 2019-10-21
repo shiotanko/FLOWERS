@@ -1,0 +1,56 @@
+.slide{
+    position: relative;
+    margin:0 auto;
+    max-width: 98%;
+    font-size:0;
+
+    img{
+        max-width: 100%;
+    }
+
+    .prev,.next{
+        position: absolute;
+        display: block;
+        top:50%;
+        width:40px;
+        height:40px;
+        z-index: 100;
+        text-align: center;
+
+    }
+
+    .prev{
+        background:50% 50% no-repeat;
+        left:0;
+    }
+
+    .next{
+        background:50% 50% no-repeat;
+        right:0;
+    }
+
+    .container{
+        position: relative;
+        overflow:hidden;
+        margin:0;
+        padding:0;
+        list-style: none;
+    
+        li{
+            position: absolute;
+            z-index: 0;
+            top:0;
+            left:0;
+            opacity:0;
+            transition: opacity 1s linear;
+        }
+    
+        .current{
+            position: relative;
+            z-index: 1;
+            opacity: 1;
+        }
+    }
+
+
+}
