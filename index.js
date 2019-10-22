@@ -51,23 +51,98 @@ $(function(){
         changeImage($(this));
     });  
     
+    // メニューの固定
     $(function() {
-        var $win = $(window),
-            $main = $('main'),
-            $nav = $('nav'),
-            navHeight = $nav.outerHeight(),
-            navPos = $nav.offset().menu,
-            fixedClass = 'fixed';
-      
-        $win.on('load scroll', function() {
-          var value = $(this).scrollTop();
-          if ( value > navPos ) {
-            $nav.addClass(fixedClass);
-            $main.css('menu', navHeight);
-          } else {
-            $nav.removeClass(fixedClass);
-            $main.css('menu', '0');
-          }
+        var _window = $(window),
+        main = $('.nav-wrap'),
+        heroBottom;
+     
+        _window.on('scroll',function(){     
+            heroBottom = $('#js-header').height();
+            if(_window.scrollTop() > heroBottom){
+                main.addClass('is-fixed');   
+            }
+            else{
+                main.removeClass('is-fixed');   
+            }
+        });
+     
+        _window.trigger('scroll');
+    });
+
+    // メニューに付いてくるアンダーライン
+    currentItem = $(".current");
+    if (currentItem[0]) {
+    currentItem.css({
+        "width": currentItem.width(),
+        "left": currentItem.position().left
+    });
+    }
+    
+    $("#nav li").hover(
+        // ホバー時
+        function(){ 
+          // ホバーしているメニューの幅と左位置に変更
+          $("#slide-line").css({
+            "width": $(this).width(),
+            "left": $(this).position().left
+          });
+        },
+        // ホバーが外れたとき
+        function(){
+            // 下線を消す
+            $("#slide-line").width(0);
+        }
+       );
+
+
+    // shopリストが横からスライドしてくる
+
+    $(function(){
+        $('.shop-list').addClass('move');
+        $(window).scroll(function(){
+          $(".shop").each(function(){
+            var imgPos = $(this).offset().top;    
+            var scroll = $(window).scrollTop();
+            var windowHeight = $(window).height();
+            if (scroll > imgPos - windowHeight + windowHeight/2){
+              $(this).find(".shop-list").removeClass('move');
+            } else {
+              $(this).find(".shop-list").addClass('move');
+            }
+          });
+        });
+      });
+
+      $(function(){
+        $('.shop-list2').addClass('move');
+        $(window).scroll(function(){
+          $(".shop").each(function(){
+            var imgPos = $(this).offset().top;    
+            var scroll = $(window).scrollTop();
+            var windowHeight = $(window).height();
+            if (scroll > imgPos - windowHeight + windowHeight/2){
+              $(this).find(".shop-list2").removeClass('move');
+            } else {
+              $(this).find(".shop-list2").addClass('move');
+            }
+          });
+        });
+      });
+
+      $(function(){
+        $('.shop-list3').addClass('move');
+        $(window).scroll(function(){
+          $(".shop").each(function(){
+            var imgPos = $(this).offset().top;    
+            var scroll = $(window).scrollTop();
+            var windowHeight = $(window).height();
+            if (scroll > imgPos - windowHeight + windowHeight/2){
+              $(this).find(".shop-list3").removeClass('move');
+            } else {
+              $(this).find(".shop-list3").addClass('move');
+            }
+          });
         });
       });
 

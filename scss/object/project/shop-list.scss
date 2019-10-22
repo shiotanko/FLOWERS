@@ -11,6 +11,9 @@
             height: 350px;
             width:280px;
             margin:20px;
+            -webkit-transition: all 1.5s;
+            -webkit-transform: translate(0, 0);
+            opacity: 1;
 
             img{
                 margin:20px 10px;;
@@ -20,7 +23,22 @@
                 margin:0.7rem 0;
             }
         }
-    }
+        .shop-list.move {
+             transform: translate(-50px, 0);                
+             opacity: 0;
+        }
+       
+        .shop-list2.move {
+            transform: translate(0, -50px);                
+            opacity: 0;
+       }
 
+       .shop-list3.move {
+            transform: translate(50px, 0);                
+            opacity: 0;
+        }
+
+    }
+    
 
 }

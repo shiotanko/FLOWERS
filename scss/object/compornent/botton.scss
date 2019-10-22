@@ -12,5 +12,7 @@
 }
 
 .btn-area:hover{
+    transition-property: all;
+    transition: 0.2s linear;
     background-color: $font_color;
 }
