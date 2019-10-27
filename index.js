@@ -146,4 +146,28 @@ $(function(){
         });
       });
 
+    //   ハンバーガーメニュー
+    
+    $('#menu-trigger').on('click',function(){
+      if($(this).hasClass('active')){
+        $(this).removeClass('active');
+        $('body').removeClass('open');
+        $('.res_nav').removeClass('open');
+        $('.overlay').removeClass('open');
+      } else {
+        $(this).addClass('active');
+        $('body').addClass('open');
+        $('.res_nav').addClass('open');
+        $('.overlay').addClass('open');
+      }
+    });
+    $('.overlay').on('click',function(){
+      if($(this).hasClass('open')){
+        $(this).removeClass('open');
+        $('#menu-trigger').removeClass('active');
+        $('body').removeClass('open');
+        $('.res_nav').removeClass('open');      
+      }
+    });
+    
 });

@@ -7,7 +7,8 @@
     <title>FLOWERS</title>
     <link rel="shortcut icon" href="img/logo.ico">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">  	
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
 </head>
 <body>
 
@@ -30,6 +31,33 @@
 
     </header>
 
+    <!-- レスポンシブ　ハンバーガーメニュー -->
+    <div id="menu-trigger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <div class="res_nav1">
+        <div id="res_nav" class="res_nav">
+            <ul>
+                <li><a href="#comsept">Comsept</a></li>
+                <li><a href="#shop">Shop一覧</a></li>                
+                <li><a href="#deliverly">配送・配達</a></li>
+                <li><a href="#contact">お問い合わせ</a></li>
+            </ul>
+        
+        </div>
+
+        
+    </div>
+
+    <!-- レスポンシブメニューが開いた時の
+    後ろの画面を黒くする -->
+    <div class="overlay"></div>
+   
+    
+    <!-- pc　メニュー -->
     <div class="nav-wrap">
         <div id="nav" class="nav">
             <ul>
@@ -40,6 +68,8 @@
             </ul>
             <span id="slide-line"></span>
         </div>
+
+        
     </div>
 
     <main class="main">
@@ -48,8 +78,13 @@
             <h2>Comsept</h2>
             <h3>身近な生活にお花を。</h3>
             <p class="dis">
-                「身近な生活にお花を。」をコンセプトにお花の販売をしています。<br>
-                季節のお花を始め、結婚式や入学式などイベントごとのお花も用意いたします。<br>
+                「身近な生活にお花を。」<br class="res414">
+                をコンセプトに<br class="res414">
+                お花の販売をしています。<br class="pc">
+                季節のお花を始め、<br class="res414">
+                結婚式や入学式など<br class="res414">
+                イベントごとのお花も<br class="res414">
+                用意いたします。<br class="pc">
                 お花の配送も行なっております。
             </p>
             <div class="comsept-ph">
@@ -104,15 +139,25 @@
             <table>
                 <tr>
                     <td rowspan="2" class="tit">料金</td>
-                    <td class="place">首都圏内</td>
-                    <td class="money">500円</td>
+                    <td class="place">
+                        <p>首都圏内</p>
+                    </td>
+                    <td class="money">
+                        <p>500円</p>
+                    </td>
                 </tr>
                 <tr>
-                    <td class="place">首都圏外</td>                        <td class="money">600円〜</td>
+                    <td class="place">
+                        <p>首都圏外</p>
+                    </td>                        
+                    <td class="money">
+                        <p>600円〜</p>
+                    </td>
                 </tr>
             </table>
             <p class="dis">
-                ※ご注文はお届けの3日前までにお願いいたします。
+                ※ご注文はお届けの3日前までに<br class="res375">
+                お願いいたします。
             </p>
         </div>
 
@@ -137,8 +182,10 @@
                     <label class="label">メッセージ</label>
                     <textarea class="inputs massage"></textarea>
                 </div>
-                <p class="dis">※ご注文の際はメッセージ欄に詳細をご記入ください。</p>
-                <p class="dis">※店舗より直接お客様へご連絡することがございます。</p>
+                <p class="dis">※ご注文の際はメッセージ欄に<br class="res414">
+                詳細をご記入ください。</p>
+                <p class="dis">※店舗より直接お客様へ<br class="res414">
+                ご連絡することがございます。</p>
 
                 
                 <input class="btn-area" type="submit" value="送信する">
@@ -154,6 +201,10 @@
     <footer>
         <p class="footer_text">(C)FLOWERS</p>
     </footer>
+
+
+   
+
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="index.js"></script>
 </body>

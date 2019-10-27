@@ -6,25 +6,24 @@
 
     .form{
         background-color: $main_color;
-        width:900px;
-        height:700px;
+        width:62%;
+        height:70%;
         margin:0 auto;
-        padding:40px 0 0 0;
+        padding:20px 0 0 0;
         
 
         .item{
             font-size:20px;
 
             .label{
-                margin:20px 0 0 125px;
-                width:150px;
-                margin-right: 0px;
+                margin:5% 0 0 15%;
+                width:20%;
             }
 
             .inputs{
-                margin:15px 0 10px 155px;
+                margin:1% 0 1% 17%;
                 height:30px;
-                width:600px;
+                width:70%;
                 background-color: $contact_text_color;
                 font-size:20px;
             }

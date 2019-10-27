@@ -1,0 +1,376 @@
+@import'../../fundation/variable.scss';
+
+@media screen and(max-width:768px){
+
+   // コンセプトの下の画像３枚
+   body{
+       .main{
+           .comsept{
+               .comsept-ph{
+                   img{
+                       width:150px;
+                       height:137px;
+                   }
+               }
+           }
+       }
+   }
+
+   .deliverly{
+       img{
+           width:85%;
+       }
+   }
+
+   .contact{
+       .form{
+           width:85%;
+           height: 65%;
+       }
+   }
+}
+
+@media screen and(max-width:559px){
+
+   // pc用のメニューを見えなくする
+   .nav-wrap{
+      display: none;
+   }
+
+// ハンバーガーメニュー
+   #menu-trigger{
+    display: inline-block;
+    width: 36px;
+    height: 28px;
+    vertical-align: middle;
+    cursor: pointer;
+    position: fixed;
+    top:2%;
+    right: 4%;
+    z-index: 100;
+
+    span {
+      display: inline-block;
+      box-sizing: border-box;
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background-color: $font_color;
+      transition: all .5s;
+     
+    }
+
+   }
+
+   // 「✖」ハンバーガーメニューをクリックした時の動き
+   #menu-trigger.active{
+      span{
+         background-color:$main_color;
+      }
+
+      span:nth-of-type(1) {
+         transform: translateY(12px) rotate(-45deg);
+      }
+
+      span:nth-of-type(2) {
+          opacity: 0;
+      }
+      
+      span:nth-of-type(3) {
+         transform: translateY(-12px) rotate(45deg);
+      }
+
+      
+   }
+
+   // 「三」ハンバーガーメニュー通常
+   span:nth-of-type(1) {
+         top: 0;
+   }
+
+   span:nth-of-type(2) {
+      top: 12px;
+   }   
+
+   span:nth-of-type(3) {
+      bottom: 0;
+   }
+
+   //メニュー
+
+   .res_nav1{
+      display: block;
+   }
+   
+   .res_nav{
+      width: 75%;
+      height: 100%;
+      padding-top: 100px;
+      background-color: $responsive_color;
+      position: fixed;
+      top: 0;
+      right: 0;
+      z-index: 10;
+      transform: translate(100%);
+      transition: all .5s;
+
+      li {
+         text-align: center;
+         padding: 8% 0;
+         font-size:20px;
+         a{
+            text-decoration: none;
+            color:$main_color;
+         }
+         
+      }
+
+   }
+
+   //メニューが出てきたときの動き
+   .res_nav.open{
+      transform: translateZ(0);
+      
+
+   }
+   
+// レスポンシブメニューが開いた時に後ろの画面を
+   // 黒くする（メニューが開いた時）
+   .overlay.open{
+      position:fixed;
+      top:0;
+      left:0;
+      width: 100%;
+      height: 100%;
+      opacity: 1;
+
+   }
+
+   // レスポンシブメニューが開いた時に後ろの画面を
+   // 黒くする（メニューが閉じている時）
+   .overlay{
+      content: "";
+      display: block;
+      width: 0;
+      height: 0;
+      background-color: #00000080;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 2;
+      opacity: 0;
+      transition: opacity .5s;
+   }
+
+    // コンセプト
+    .comsept{
+
+      // コンセプト説明文　改行
+          .res414{
+              display: block;
+          }
+          .dis{
+              line-height: 30px;
+          }   
+      }
+
+}
+@media screen and(max-width:414px){
+   // ロゴ
+   header{
+       .top-logo{
+           width:170px;
+           height:35px;
+       }
+   }
+   
+    
+  body {
+
+       // タイトル
+       h2{
+           margin:0 auto 55px;
+           padding:15px 0 0 0;
+       }
+
+       .main{
+           .comsept{
+               h2{
+                   margin:30px auto 55px;
+                   padding:0;
+               }
+           }
+
+       }
+
+       // ハンバーガーメニュー
+       #menu-trigger{
+           display: inline-block;
+           width: 36px;
+           height: 28px;
+           vertical-align: middle;
+           cursor: pointer;
+           position: fixed;
+           top:1%;
+           right: 4%;
+           z-index: 100;
+       
+           span {
+           display: inline-block;
+           box-sizing: border-box;
+           position: absolute;
+           left: 0;
+           width: 100%;
+           height: 4px;
+           background-color: $font_color;
+           transition: all .5s;
+           
+           }
+       }
+
+       .main{
+           // コンセプト画像
+           .comsept{
+               .comsept-ph{
+                   img:nth-of-type(2){
+                   display: none;
+                   }
+                   img:nth-of-type(3){
+                   display: none;
+                   }
+               }
+           }
+
+           // ショップ一覧
+           .shop{
+               height:1300px;
+               // ショップ一覧を縦にする
+               ul{
+                   display: block;
+                   // 一覧を真ん中にする
+                   li{
+                       margin:30px auto;
+                   }
+                   
+                   // スライドして出てくる方向を変える
+                   .shop-list.move {
+                       transform: translate(-50px, 0);                
+                       opacity: 0;
+                  }
+                 
+                  .shop-list2.move {
+                      transform: translate(50px, 0);                
+                      opacity: 0;
+                 }
+          
+                 .shop-list3.move {
+                      transform: translate(-50px, 0);                
+                      opacity: 0;
+                  }
+               }
+           }
+           
+           // 配送・配達
+           .deliverly{
+               height:500px;
+               table{
+                   width:85%;
+                   .tit{
+                       width:10px;
+                   }
+                   .place,.money{
+                       width:30px;
+                       padding:0;
+                   }
+                   p{
+                       width:150px;
+                       height:25px;
+                   }
+               }
+           }
+
+           .contact{
+
+
+               .form{
+                   height:75%;
+
+                   .dis{
+                       margin:20px 0;
+                   }
+                   .res414{
+                       display: block;
+                   }
+               }
+
+               .return_top{
+                   display: block;
+                   margin:40px auto 20px;
+                   padding:0 auto 10px;
+               }
+           }
+      }
+  }
+   
+}
+ /*　画面サイズが375px以下はここを読み込む　*/
+
+ @media screen and(max-width:375px){
+    
+   body{
+
+       .main{
+           // コンセプト
+           .comsept{
+
+               .dis{
+                   font-size:14px;
+               }
+           }
+       
+
+         // 配送・配達
+         .deliverly{
+            
+            table{
+               width:85%;
+               
+                  .tit{
+                     width:12px;
+                  }
+                  .place,.money{
+                     width:30px;
+                     padding:0;
+                  }
+                  p{
+                     width:130px;
+                     height:20px;
+                  }
+            }
+            .dis{
+               .res375{
+                  display: block;
+               }
+            }
+         }
+      }
+   }   
+}
+@media screen and(max-width:320px){
+    
+   body{
+
+       .main{
+         .deliverly{
+            
+            table{
+                  p{
+                     width:108px;
+                     height:20px;
+                  }
+            }
+         }
+      }
+   }   
+}
