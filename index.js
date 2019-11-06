@@ -169,5 +169,15 @@ $(function(){
         $('.res_nav').removeClass('open');      
       }
     });
-    
+  
+    $(function() {
+ 
+      // submit()に関数をバインド
+      $('form').submit(function() {
+
+        // 処理を中断
+        return false;
+     
+      });
+    });
 });
